@@ -1,0 +1,16 @@
+{
+  "name": "doker",
+  "version": "1.0.0",
+  "description": "Landing page for our dear friend Hadzhi Muratchaev",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.14.3",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Magomed Kandaev",
+  "license": "ISC"
+}
