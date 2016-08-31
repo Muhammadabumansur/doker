@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+html * {
+  box-sizing: inherit; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.header {
+  margin: 0 auto;
+  width: 100%; }
+
+.top-header {
+  width: 100%;
+  padding: 30px 2%;
+  background: #aaa url(../img/brickwall.png); }
+
+.top-header__logo {
+  float: left;
+  width: 16%; }
+
+.top-header__text-block {
+  float: left;
+  width: 50%;
+  margin-left: 7%; }
+
+.top-header__main-header {
+  font-size: 20px;
+  font-family: 'open_sanssemibold';
+  color: #000;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.top-header__slogan {
+  font-size: 16px;
+  font-family: 'open_sansregular';
+  color: #333;
+  text-align: center; }
+
+.top-header__contacts {
+  float: right;
+  width: 20%;
+  margin-left: 7%; }
+  .top-header__contacts p {
+    margin-bottom: 5px; }

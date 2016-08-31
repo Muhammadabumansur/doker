@@ -10,14 +10,19 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', ['styles'], function() {
 		browserSync.init({
 				server: {
-						baseDir: "./app"
+						baseDir: "./app",
+						routes: {
+		                        "/node_modules": "node_modules",
+		                        "/bower_components": "bower_components"
+		                    }
 				},
 				notify: false
 		});
 });
 
 gulp.task('styles', function () {
-	return gulp.src('sass/*.sass')
+	return gulp.src('app/sass/*.sass')
+	.pipe(sass().on('error', sass.logError))
 	// .pipe(sass({
 	// 	includePaths: require('node-bourbon').includePaths
 	// }).on('error', sass.logError))
@@ -41,7 +46,7 @@ gulp.task('styles', function () {
 // });
 
 gulp.task('watch', function () {
-	gulp.watch('sass/*.sass', ['styles']);
+	gulp.watch('app/sass/*.sass', ['styles']);
 	// gulp.watch('app/libs/**/*.js', ['scripts']);
 	gulp.watch('app/js/*.js').on("change", browserSync.reload);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
