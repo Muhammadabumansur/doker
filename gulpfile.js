@@ -16,7 +16,8 @@ gulp.task('browser-sync', ['styles'], function() {
 		                        "/bower_components": "bower_components"
 		                    }
 				},
-				notify: false
+				notify: false,
+				tunnel: "doker"
 		});
 });
 
